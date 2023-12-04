@@ -36,3 +36,7 @@
     background-color: hotpink;
     border-radius: 3px;
   }
+  .pagination button {
+    padding: 3px 8px;
+    background-color: aqua;
+  }
