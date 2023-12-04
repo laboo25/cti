@@ -15,6 +15,7 @@ export const Data = [
     {
         id: uuidv4(),
         name: 'কামতৃষ্ণা',
+        title: 'lust',
         catagory: ['anal', 'mom', 'small'],
         ncol: 'yellow',
         to: '/lust',
