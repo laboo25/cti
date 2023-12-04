@@ -1,0 +1,21 @@
+.containerwr {
+    width: 100%;
+    padding: 10px 25px;
+    /* margin: 20px 0; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-column-gap: 20px;
+    grid-gap: 30px;
+    overflow: hidden;
+    
+  }
+  .containerwr .cards {
+    /* height: 165px; */
+    height: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    overflow: hidden;
+  }
