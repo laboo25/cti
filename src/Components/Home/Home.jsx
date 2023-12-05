@@ -52,7 +52,7 @@ const Home = () => {
         <>
             <div>
                 <div>
-                    <div className="filter">
+                    <div className="filter w-full flex flex-wrap flex-col">
                         <input
                             type="text"
                             placeholder="search"
