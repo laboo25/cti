@@ -80,14 +80,14 @@ const Home = () => {
             {/* Your existing code for displaying items */}
             <div className="w-full bg-[yellow] px-2 py-1">
               <Link
-                to={`/${item.name}`}
+                to={`/${item.title}`}
                 className="text-[22px] font-semibold font-noto"
               >
                 {item.name}
               </Link>
             </div>
             <p className="w-full h-[100px] font-noto text-[12px] overflow-hidden">
-              {item.text}
+              {item.description }
             </p>
             <ul className="list-none p-0 m-0 flex">
               {item.catagory.map((category, index) => (
