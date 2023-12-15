@@ -41,8 +41,9 @@ const Text = () => {
 
   return (
     <>
-      <div className=' textcontainer w-[600px] mx-auto bg-gray-500'>
-        <div className='w-full h-[250px] bg-red-400'>
+      <div className='  w-full'>
+        <div className=' textcontainer bg-gray-500'>
+        <div className='w-full h-[250px]'>
           <img src={item.cover} alt="" className='w-full h-full object-contain' />
         </div>
         <div className='p-2'>
@@ -57,6 +58,7 @@ const Text = () => {
           ▲
         </button>
       )}
+      </div>
     </>
   );
 };
