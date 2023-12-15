@@ -41,7 +41,7 @@ const Text = () => {
 
   return (
     <>
-      <div className='  w-full'>
+      <div className='w-full'>
         <div className=' textcontainer bg-gray-500'>
         <div className='w-full h-[250px]'>
           <img src={item.cover} alt="" className='w-full h-full object-contain' />
