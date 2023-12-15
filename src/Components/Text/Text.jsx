@@ -4,10 +4,10 @@ import { Link, useParams } from 'react-router-dom';
 import { CtiTxt } from '../Text/CtiTxt';
 
 const Text = () => {
-  const { name } = useParams();
+  const { title } = useParams();
   const [showBackToTop, setShowBackToTop] = useState(false);
 
-  const item = CtiTxt.find((item) => item.name === name);
+  const item = CtiTxt.find((item) => item.title === title);
 
   if (!item) {
     return <div className="flex items-center justify-center h-screen">
