@@ -49,7 +49,7 @@ const Home = () => {
   return (
     <div className='w-full'>
       {/* Search Bar and Category Filter */}
-      <div className="flex space-x-4 mb-4">
+      <div className="flex flex-wrap space-x-4 mb-4">
         <input
           type="text"
           placeholder="Search..."
