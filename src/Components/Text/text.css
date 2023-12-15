@@ -1,10 +1,11 @@
 .textcontainer {
   width: 600px !important;
+  margin: 0 auto;
   height: 100%;
 }
 @media screen and (min-width: 375px) {
   .textcontainer {
-    width: 100% !important;
+    width: 375px !important;
     height: 100%;
   }
 }
