@@ -1,112 +1,123 @@
 import React, { useState } from 'react';
 import '../Home/home.css';
-import { Data } from './CtiList';
 import { Link } from 'react-router-dom';
+import { CtiTxt } from '../Text/CtiTxt';
+
+const ITEMS_PER_PAGE = 50;
 
 const Home = () => {
-    const [selectedCategory, setSelectedCategory] = useState('All');
-    const [searchQuery, setSearchQuery] = useState('');
-    const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(5); // Adjust as needed
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchText, setSearchText] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
 
-    const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-        setCurrentPage(1); // Reset to the first page when category changes
-    };
+  // Extract unique categories from CtiTxt
+  const allCategories = Array.from(
+    new Set(CtiTxt.flatMap((item) => item.catagory))
+  );
 
-    const uniqueCategories = Array.from(
-        new Set(Data.flatMap((item) => item.catagory || [])),
-    );
+  const filteredData = CtiTxt.filter((item) => {
+    // Filter by category
+    const categoryFilter =
+      selectedCategory === '' || item.catagory.includes(selectedCategory);
 
-    const filterByCategory = (category) => {
-        handleCategoryChange(category);
-    };
+    // Filter by name or title (case-insensitive) in English
+    const searchFilter = searchText.toLowerCase();
+    const isNameMatch = item.name.toLowerCase().includes(searchFilter);
 
-    const filteredData =
-        selectedCategory === 'All'
-            ? Data
-            : Data.filter((item) => (item.catagory || []).includes(selectedCategory));
+    // Check if item.text is a string before using toLowerCase()
+    const isTitleMatch =
+      typeof item.text === 'string' &&
+      item.text.toLowerCase().includes(searchFilter);
 
-    const filteredAndSearchedData = filteredData.filter((item) => {
-        const itemName = item.name && item.name.toLowerCase();
-        const itemTitle = item.title && item.title.toLowerCase();
-        const itemCategory = item.catagory && typeof item.catagory === 'string' && item.catagory.toLowerCase();
+    // Filter by name or title (case-insensitive) in Bengali
+    const isNameBengaliMatch = item.name.includes(searchText);
 
-        return (
-            (itemName && itemName.includes(searchQuery.toLowerCase())) ||
-            (itemTitle && itemTitle.includes(searchQuery.toLowerCase())) ||
-            (itemCategory && itemCategory.includes(searchQuery.toLowerCase()))
-        );
-    });
-
-    // Pagination
-    const indexOfLastItem = currentPage * itemsPerPage;
-    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = filteredAndSearchedData.slice(indexOfFirstItem, indexOfLastItem);
-
-    const paginate = (pageNumber) => {
-        setCurrentPage(pageNumber);
-    };
+    // Check if item.text is a string before using includes()
+    const isTitleBengaliMatch =
+      typeof item.text === 'string' && item.text.includes(searchText);
 
     return (
-        <>
-            <div>
-                <div>
-                    <div className="filter">
-                        <input
-                            type="text"
-                            placeholder="search"
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                        <button onClick={() => filterByCategory('All')} className="text-white">
-                            all
-                        </button>
-                        {uniqueCategories.map((category) => (
-                            <button key={category} onClick={() => filterByCategory(category)}>
-                                {category}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-                <div className="containerwr bg-[#dedede] mx-auto">
-                    {filteredAndSearchedData.map((item) => (
-                        <div className="cards" key={item.id}>
-                            <div className="title w-full p-[5px]" style={{ backgroundColor: item.ncol }}>
-                                <h2 className="text-[18px] font-bold capitalize">
-                                    {item.name}
-                                </h2>
-                            </div>
-                            <div className="w-full h-[100px] p-[5px] overflow-hidden bg-[#677077] border-b-[1px] border-black">
-                                <Link to={item.to}>
-                                    <p className="text-[12px] text-[#3f464c] text-justify">{item.description}</p>
-                                </Link>
-                            </div>
-                            <div className="tag w-full h-auto p-[5px] bg-[#677077]">
-                                <ul className="text-[13px] uppercase text-[blue] flex">
-                                    {item.catagory.map((categoryItem) => (
-                                        <li className='mr-2' key={categoryItem}>{categoryItem}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    ))}
-
-                </div>
-                <div className="pagination flex justify-center py-3">
-                    {Array.from({ length: Math.ceil(filteredAndSearchedData.length / itemsPerPage) }, (_, index) => (
-                        <button
-                            key={index + 1}
-                            onClick={() => paginate(index + 1)}
-                            className={currentPage === index + 1 ? 'active bg-red-600' : ''}
-                        >
-                            {index + 1}
-                        </button>
-                    ))}
-                </div>
-            </div>
-        </>
+      categoryFilter &&
+      (isNameMatch || isTitleMatch || isNameBengaliMatch || isTitleBengaliMatch)
     );
+  });
+
+  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const visibleData = filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  return (
+    <div className='w-full'>
+      {/* Search Bar and Category Filter */}
+      <div className="flex space-x-4 mb-4">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchText}
+          onChange={(e) => setSearchText(e.target.value)}
+          className="border p-2 rounded-md w-64"
+        />
+
+        {/* Category Dropdown */}
+        <select
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="border p-2 rounded-md"
+        >
+          <option value="">All Categories</option>
+          {/* Generate category options dynamically */}
+          {allCategories.map((category) => (
+            <option key={category} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <div className="containerwr">
+        {visibleData.map((item) => (
+          <div key={item.id} className="cards">
+            {/* Your existing code for displaying items */}
+            <div className="w-full bg-[yellow] px-2 py-1">
+              <Link
+                to={`/${item.name}`}
+                className="text-[22px] font-semibold font-noto"
+              >
+                {item.name}
+              </Link>
+            </div>
+            <p className="w-full h-[100px] font-noto text-[12px] overflow-hidden">
+              {item.text}
+            </p>
+            <ul className="list-none p-0 m-0 flex">
+              {item.catagory.map((category, index) => (
+                <li key={index} className="mx-1 text-[13px] text-[blue]">
+                  {category}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* Pagination */}
+      <div className="pagination mt-4 w-[600px] flex justify-center">
+        {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+          (page) => (
+            <button
+              key={page}
+              onClick={() => setCurrentPage(page)}
+              className={`pagination-btn ${
+                currentPage === page ? 'active' : ''
+              }`}
+            >
+              {page}
+            </button>
+          )
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Home;

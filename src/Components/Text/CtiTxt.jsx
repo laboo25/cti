@@ -1,5 +1,27 @@
 import { v4 as uuidv4 } from 'uuid';
-export const Data = [
+export const CtiTxt = [
+    {
+        id: uuidv4(),
+        cover: 'examples',
+        name: 'সার্থক জীবন',
+        catagory: ['msm', 'group', 'swap'],
+
+        ncol: 'red',
+        text: (
+            <>
+                <div className="navigate">
+                    <a href="#1️⃣">1️⃣</a>
+                    <a href="#2️⃣">2️⃣</a>
+                    <a href="#3️⃣">3️⃣</a>
+                    <a href="#4️⃣">4️⃣</a>
+                </div>
+                <p id="1️⃣">1️⃣</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ex quo praesentium alias voluptatum repellendus eveniet eligendi cupiditate rem similique nihil tempore, sequi natus at. Saepe voluptatum similique beatae assumenda quod. Reiciendis corrupti quas repellat quibusdam voluptas, minus, voluptates, quam porro quaerat nihil sint nobis reprehenderit aliquam quasi? Culpa sequi officia quasi nobis nisi fugit, mollitia velit tempora dolorum omnis facere qui aspernatur dolores ullam quod perspiciatis facilis dolor necessitatibus fugiat veritatis harum nemo earum! Consequuntur amet aperiam illum facilis. Inventore, aperiam harum. Laboriosam sit dolor animi nemo optio reiciendis vitae autem fuga vel quia natus excepturi, veniam, iure suscipit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus ullam cumque praesentium ad sed! Consectetur, expedita adipisci quasi sequi itaque nobis. Natus sed quisquam vero quidem non eveniet aliquid officiis, dolores vel! Voluptatum adipisci molestias quam neque. Blanditiis vitae laboriosam deleniti porro vel eius nobis nostrum eligendi ab voluptas cum enim, quaerat dicta dolores magnam debitis ullam hic esse? Ut corrupti cum nisi, ipsum magnam error facilis quia quo, quis explicabo quisquam, distinctio ex possimus. Accusantium, natus, illo quisquam optio ipsum minus assumenda eos numquam quidem tenetur mollitia provident magnam laboriosam soluta similique rerum ex libero nihil animi eligendi necessitatibus, aut officia reiciendis! Quaerat labore ipsam modi expedita doloribus vel error optio alias iure repellat rem accusantium consequuntur, provident molestiae ab similique commodi quam? Quidem, totam. Cupiditate nesciunt voluptas numquam eum aliquam qui reiciendis nihil non magnam cum, iusto eos neque quos quas vitae placeat laboriosam eveniet exercitationem similique, voluptate voluptatibus veniam excepturi et aperiam! Nostrum dolor expedita atque praesentium dolorum delectus voluptatum tempore non numquam voluptates explicabo porro nisi ex dicta, eaque voluptas nobis repudiandae vero corporis? Nemo, illum, eos tenetur officiis corporis veritatis tempore laborum ipsam, animi incidunt iste sapiente? Unde nobis delectus cumque repellendus! Vitae dignissimos sed dolorum excepturi tenetur facere doloribus quo ipsa repudiandae mollitia velit iusto repellat quod cum obcaecati exercitationem veritatis sequi optio consequatur repellendus, molestiae, nam quidem voluptate suscipit. Natus quam, sed fugit voluptatem ducimus expedita amet, sequi provident quod pariatur ullam autem accusantium, officia doloribus impedit aut consequatur excepturi culpa beatae repellendus? Beatae earum numquam dolore ducimus, odit asperiores odio exercitationem minus, distinctio repellat assumenda? Laudantium nulla dicta perferendis sed illo odio. Nostrum sed optio incidunt illum nemo tenetur obcaecati ut, voluptas deserunt eius eaque consequatur consequuntur porro similique cum modi quaerat velit expedita! Enim molestias fuga nihil sapiente modi laboriosam impedit, consequatur aspernatur unde, quidem a et repudiandae delectus incidunt sunt magnam iure ducimus. Voluptatum, quasi voluptates optio architecto dignissimos quisquam reprehenderit deleniti! Quas reiciendis dicta temporibus architecto? Optio ad quos unde quam eveniet vel eaque id iusto sit ducimus cumque, in voluptas. Alias totam distinctio quo quas autem. Suscipit omnis fuga, vitae nesciunt sed alias porro, delectus iste rem amet error tempora officiis similique dolores, tempore in accusantium? Sunt ad illum suscipit commodi, fugit dolor quasi veniam nostrum odio assumenda iste. Officiis commodi officia beatae rem pariatur voluptate nesciunt excepturi facere incidunt inventore laboriosam iste consequuntur eius deleniti ut quaerat expedita nostrum suscipit, numquam dicta consectetur eligendi tempora veritatis laudantium! Cumque maiores ducimus distinctio, voluptate ipsa iste. Iure ab, quaerat velit officia fuga veritatis facere enim error quae sit vel ea ut facilis quasi eius deleniti. Dolor magnam aperiam error quidem consequuntur molestias mollitia, reprehenderit dicta ad architecto ut repellendus fugit eos libero rerum accusamus voluptatibus eius quaerat nesciunt ducimus cupiditate dolore amet iste? Totam, ullam nihil optio eveniet, assumenda quibusdam sint eos voluptatibus minus quaerat architecto recusandae debitis in, deserunt cumque mollitia inventore reiciendis aliquam placeat nostrum repudiandae repellat voluptatem magni excepturi. Libero, perspiciatis. Delectus impedit officia quas.</p>
+                
+            </>
+        ),
+    },
+
     {
         id: uuidv4(),
         name: 'কামতৃষ্ণা',
@@ -8,75 +30,8 @@ export const Data = [
         text: (
             <>
                 <p>মাঝরাতে হঠাৎ ঘুমটা ভেঙ্গে গেল । সচরাচর এমনটা হয় না । প্রত্যেক দিন নিয়ম করে ভোর চারটের সময় আমার ঠিক ঘুম ভাঙ্গবেই । ঘুম থেকে উঠেই আগে মাকে তুলি তারপর জল খাই ও বাথরুমে যাই।</p>
-        <p>তবে সেদিন কেন জানি না হঠাৎ করে ঘুমটা সময়ের আগেই ভেঙে গেল । জল তেষ্টাও পেয়েছিল তাই মায়ের খোঁজ করছিলাম। বারকয়েক ডাকলাম কোন সাড়া পেলাম না। আলোটা জালাতেই দেখলাম মা বিছানায় নেই ।</p>
-        <p>ভাবলাম বাথরুমে গেছে নিশ্চয়ই, আমি নিজেই ফিলটার থেকে জল খেয়ে বিছানায় বসলাম দশ মিনিট, বিশ মিনিট পেরিয়ে গোল তবুও মায়ের দেখা নেই । বাথরমেও এতক্ষণ থাকার কথা নয় !</p>
-        <p>আমি বিছানা থেকে উঠে বাথরমের দিকে এগিয়ে গিয়ে দেখি রান্নাঘর লাগোয়া রুমটায় আলো জলছে। সাধারণত রাত্রী বেলায় আলো নেভানো থাকে।</p>
-        <p>আমি সেই রমুটার দিকে এগিয়ে গেলাম। জানালার কপাটের ফাঁক দিয়ে দেখতে পেলাম এক তাজ্জব ব্যাপার। দেখি মা সম্পূর্ণ উলঙ্গ অবস্থায় শুয়ে আছে আর আমাদের বাড়ির কম বয়সী চাকর ফনী তার সাপের মতো ধোনটা মায়ের তলপেটে ঘষছে ।</p>
-        <p>আমি আর নিজের চোখকেও বিশ্বাস করতে পারছি না, মাথা ঘুরেছে ! তবুও আমি কপাটের ফাঁক দিয়ে এক দৃষ্টিতে স্থির রইলাম।</p>
-        <p>এরপর ফনী তার লম্বা বাড়াটা মায়ের গুদের মধ্যে পুরে জোরে জোরে ঠাপাতে থাকে । মা সুখের আবেশে উঃ আঃ শব্দ করছে আর বলছে, মার মার ফনী মেরে মেরে গুদে ফালা ফালা করে দে।</p>
-        <p>ফনী তখন বলছে আপনি যাই বলনে, মেম সাহেব আপনার গুদ যেন আমার বাড়ার মাপে তৈরী। মারলে মনেই হয় না যে আপনি একটা আঠেরো বছরের সন্তানের জননী।</p>
-        <p>মা ফনীকে ধমক দিয়ে বলল – তোকে কতবার বলেছি না আমাকে মেমসাহেব বলবি না, নাম ডাকবি মৌলি । মা বলল, বুঝেছিস।</p>
-        <p>ফনি বলে, বুঝেছি বুঝেছি।</p>
-        <p>ফনী ঠাপ দিতে থাকে আর মাও সুখের আবেশে উঃ আঃ ইসঃ মাগোঃ করতে করতে তলঠাপ দিতে থাকে।</p>
-        <p>ওদের চোদন লীলা দেখে আমার ধোনও তখন ঠাটিয়ে কলাগাছ, নিজের মা হোক আর যেই হোক সেই মুহুরতে ইচ্ছা করছিল যে ফনীকে ঠেলে সরিয়ে দিয়ে আমার ধোনটা মায়ের গুদে ঢুকিয়ে দিই।</p>
-        <p>এবার ফনী মায়ের ডবকা মাই দুটো সজোরে টিপতে টিপতে ঠাপের গতি বাড়াতে থাকে । আর মা সাথে আত্মহারা হয়ে ফনীর গলা জড়িয়ে ধরে ঠাপের পর ঠাপ খেতে থাকে ।</p>
-        <p>আমিও তখন বাড়া খেচতে থাকি আর লুকিয়ে লুকিয়ে ওদের চোদন দেখি। আমি মনে মনে চিন্তা করলাম, এই জনাই বাবা বোধ হয় মাকে ডিভোর্স দিয়েছিল! এমনিতে আমার মা খুব সুন্দরী, বয়স আর কত হবে বড় জোর ৩৮-৪০ বছর।</p>
-        <p>বাবা মাকে ডিভোর্স দিয়ে দেবার পর, মা এসে মামা দাদুর বাড়িতে ওঠে।</p>
-        <p>মামাদাদু মারা যাওয়ার পর সমস্ত সম্পত্তির মালিক হয় মা । বাবাকে ছেড়ে দেবার পর লোক লজ্জার ভয়ে মা আর বিয়েও করেনি। আর বিয়ে করেই করবে কি লোককে দিয়ে মারিয়েই সুখ তো লুটে নিচ্ছে!</p>
-        <p>মা এবার শরীরটাকে মোচড় দিচ্ছে। আর বলছে, ফনী ধর ধর ধর এবার আমার হবে, আঃ ইসঃ ইসঃ ।</p>
-        <p>ফনীও বারকয়েক ঠাপ দিয়ে মায়ের গুদে বীর্য ঢেলে দিল। ফনী রস মাখা ধোনটা মায়ের মুখে ঢাকিয়ে দিল। মা চকলেটের মত চাটতে লাগল।</p>
-        <p>এদিকে আমিও খেচে একবার মাল ফেলে দিয়েছি।</p>
-        <p>ওদিকে ফনীর বুকে মা শুয়ে আছে আর ফনী হাত দিয়ে মায়ে গুদে আঙলী করছে আর বলছে, আর কতদিন এভাবে লুকিয়ে গুদ মারা হবে। তার চেয়ে চল আমরা পালিয়ে যাই তারপর বিয়ে করব। ফনী বেটা খুব সেয়ানা সম্পত্তি হাতাতে চায় ।</p>
-        <p>মা সায় দেয় না ।&nbsp;বলে ছেলেটা যে তার পথে ভেসে যাবে ?</p>
-        <p>মা ঘড়ির দিকে তাকিয়ে দেখল পৌনে চারটে বাজে। এই ছেলেটা জেগে উঠবে আমি চলি ! এই বলে মা কাপড় পড়তে যায়। আমি অমনি ছুটে এসে লাইট নিভিয়ে দিয়ে লক্ষী ছেলের মত শুয়ে পড়লাম ঘুমানোর ভান করে ।</p>
-        <p>মা এল অন্য দিনের মত বিছানায় শুয়ে পড়ল ।</p>
-        <p>এদিকে ওদের চোদাচুদি দেখে আমার ধোন দাঁড়িয়েই আছে। &nbsp;কিছুক্ষণ পর জেগে উঠলাম অন্যদিনের মত। মাকে ডাকলাম জল নিয়ে এল, খেলাম।</p>
-        <p>পেচ্ছাব করে এসে সাহস করে মাকে বলে ফেললাম, তোমকে বিয়ে করবে বলেছে ?</p>
-        <p>মা যেন আকাশ থেকে পড়ল। কিন্তু কিন্তু করে বলে – তুই কি করে জানলি?</p>
-        <p>আমি বলি, সব জানি, সব দেখেছি আর হেয়ালী করো না। লজ্জায় মায়ের মুখে লাল হয়ে উঠল।</p>
-        <p>মা আমার কাছে এসে লজ্জা মেশানো গলায় বলে — দেখ বাবা পানু। যা জেনেছিস জেনেছিস লোকের কাছে কিছু বলিশ না।</p>
-        <p>আমি বলি, সব বলব। পঞ্চায়েতে মিটিং ডেকে সব বলব।</p>
-        <p>মা ভয় পেয়ে এসে আমাকে আদর করে চুম খেয়ে নানারকম ভাবে সান্ত্বনা দেবার চেষ্টা করে। মা আমাকে আদর করে জড়িয়ে ধরে । আমার ঠাটানো ধোনের খোঁচা মায়ের তলপেটে, আলতো ভাবে লাগতে থাকে।</p>
-        <p>মা সেটা বুঝতে পেরে আমার প্যান্টের উপর দিয়েই ধোনটা ধরে বলে পানু মাই সন, এটা কি বানিয়েছিস রে?</p>
-        <p>আমি বলি, আগে তো এরকম ছিল না। আজ তোমাদের চোদাচুদি করতে দেখে এরকম হয়ে গেছে।</p>
-        <p>মা এবার আমার প্যান্টের বোতাম খুলে বিচিশুদ্ধ ধোনটাকে টেনে বের করে আনে।</p>
-        <p>আমি তখন মায়ের স্তনে হাত দিয়েছি। মা আমাকে প্রশ্রয় দিয়ে বলে – আগে জানলে ফনীকে দিয়ে চোদাতাম কেন? তুই তো ছিলিস তোকে দিয়েই মনের আশ মেটাতাম।</p>
-        <p>মা বলে, বিছানায় চল তোর ধোন খেচে দিই ।</p>
-        <p>আমি বলি, শুধু খেঁচা নয় সবই করব।</p>
-        <p>হ্যাঁ রে বললাম তো করবি।-</p>
-        <p>এই বলে বিছানায় গেল, মা আমার সব খুলে ফেলল। আমি এক এক করে মায়ের শাড়ি, ব্লাউজ, সায়া সব এক এক করে খুলে ফেললাম ।</p>
-        <p>মা এখন আমার সামনে সম্পূর্ণ উলঙ্গ। মায়ের দুখের প্রশংসা করে বলি, তোমার এগুলো তো খুব সুন্দর, আমি খাব।</p>
-        <p>মা বলল, খা না। আগেও খেয়েছিস এখনও খা।</p>
-        <p>আমি দুধ দুটো জোরে জোরে ডলতে থাকি। মাইয়ের বোঁটা মুখের মধ্যে পরে আলতো করে কামড়ে দিই ।</p>
-        <p>মা সুখের আবেশে ইস ইস করতে থাকে। মা নিজের শরীরটার সাথে আমার শরীরটাকে বেশি করে মিশিয়ে নিতে থাকে ।</p>
-        <p>আমি মায়ের ঠোঁটের মধ্যে আমার ঠোঁট দুটি ঢুকিয়ে দিয়ে চুক চুক করে চুষতে থাকি।</p>
-        <p>মা আমার বাড়ার বালে বিলি কাটতে কাটতে বিচিগুলি চুষে দিতে লাগল । আমিও এক অজানা সুখ উপভোগ করতে থাকি। আমি মায়ের সারা শরীরে চুম, খেতে খেতে তলপেটে চুমু খেলাম তারপর আস্তে আস্তে মুখটা নামিয়ে আনলাম গুদের মধ্যে।</p>
-        <p>কালো বাল সরিয়ে গুদের ফুটোয় হাত রাখলাম।</p>
-        <p>মা এপাশ ওপাশ করতে থাকে। আমি আমার মাথাটাকে গুদের মুখে নিয়ে গিয়ে ঘসতে শুরু করলাম। মা তার গুদটাকে আরো বেশী করে আমার মাথার মধ্যে মিশিয়ে দিতে থাকল।</p>
-        <p>মা আমার চুলে বিলি কাটছে আর শীৎকার দিচ্ছে, আর আর ইস ইস ইস ।</p>
-        <p>মা বলে, জানিস পানু, যে ছেলেকে দিয়ে গুদ মারায় তাকে বলে হারামী।</p>
-        <p>আমি বলি, তা, তুমি হারামী আর আমি হারামীর বাচ্চা ।।</p>
-        <p>মা বলল, হ্যাঁরে, আমি সুখের জন্য হারামী হতেও রাজী&nbsp;আছি। নে পানু আর দেরী করিসনা বাবা, এবার তোর বাঁশের মত ধোনটা আমার গুদে ঢোকা। কখন থেকে ওটা কটকট করছে ।</p>
-        <p>আমি মাকে চিৎ করে শুইয়ে দিলাম। মা পা দুটি ফাঁক করে গুদের চেরা মেলে ধরল, তারপর নিজের হাতে বাড়াটাকে টেনে নিয়ে গিয়ে গুদের মুখে সেট করল এবং আমাকে ঠাপাতে বলল ।</p>
-        <p>এরপর দুহাত দিয়ে আমার কোমরটা টেনে নিয়ে বাড়াটা গুদের মধ্যে নিয়ে নিল। আমি ঠাপ দিতে লাগলাম ।</p>
-        <p>মা চোখ বন্ধ করে আমার ঠাপ খেতে লাগল! আর শীৎকার দিতে থাকে, ওরে পানুরে ইস মাগো করতে লাগল। এবং তলঠাপ দিতে থাকল।</p>
-        <p>প্রায় মিনিট কুড়ি এই রকম ভাবে চলার পর মা গুদের জল খসাল। আমি বাড়াটাকে গুদে থেকে বের করে দিয়ে সেই রস চুক চুক করে খেতে থাকি। তারপর আবার মায়ের ফর্সা স্তন জোড়া নিয়ে খেলতে আরম্ভ করলাম ।</p>
-        <p>মায়ের স্তন জোড়া এখনো কিন্তু বেশ টাইট। যুবতী মেয়েদের মত গুদও বেশ টাইট ।</p>
-        <p>আমি আবার মায়ের গুদে বাড়া ঢুকিয়ে ঠাপ দিতে থাকি । মা গুদ দিয়ে আমার বাড়া কামড়ে ধরল। ঠাপের গতি যত বাড়ছে অমনি পচ পচ ফচ ফচ শব্দটাও বাড়ছে । বাড়াটা যেন আরও আগের থেকে শক্ত হয়ে উঠল। মাকে বলি, মাগো এবার আমার হবে গো ভাল করে ধর।</p>
-        <p>এই বলে ফচ ফচ করে মায়ের গুদে বীর্য ঢেলে দিলাম। এরপর বেশ কিছুক্ষণ আমরা দুজনে জড়াজড়ি করে শুয়ে রইলাম।</p>
-        <p>তারপর মা আমার নেতিয়ে যাওয়া ধোনটাকে আবার চুষে চুষে দাঁড় করাল । তারপর মা বলল, চল বাথরমে চল । গিয়ে আমি মাকে ভার করে স্নান করিয়ে দিলাম ।</p>
-        <p>তারপর মাইগুলোকে উপর নীচ করে ভাল করে ডলতে থাকি।</p>
-        <p>মা আমাকে নিয়ে বিছানায় এল। আমি মায়ের বুকের উপর বসে ধোনটাকে মায়ের মুখে ঢোকালাম। মা ধোন চুষতে থাকে। আমি মায়ের চুলে হাত বুলিয়ে দিচ্ছি, কখনও বা চুমু খাচ্ছি।</p>
-        <p>এবার আমার ধোনটাকে মুখে থেকে বের করে গুদে ঢুকিয়ে দিলাম।</p>
-        <p>মা আমার গালে চুমা দিয়ে বলল – দারুন সুখ দিচ্ছিস রে পানু । এমনি করে প্রতিদিন সুখ দিবি ?</p>
-        <p>আমি বলি, হ্যাঁ তবে একটা শর্তে।</p>
-        <p>মা বলে কি ?</p>
-        <p>আমি বলি, ফনীকে বাড়ি থেকে তাড়াতে হবে।</p>
-        <p>মা বলে, আচ্ছা ঠিক আছে তাই হবে।</p>
-        <p>মায়ের গুদে ঠাপের পর ঠাপ দিচ্ছি। উঃ আঃ ইস ইস উঃ- করে করে মা ঠাপ খাচ্ছে।</p>
-        <p>অনেকক্ষণ পরে আমরা আলাদা হলাম। মায়ের বুকের উপর পরে থাকলাম। মায়ের গুদে আবার হাত দিলাম। মা বলে — এখন না পানু আজ আর পারবো না । আজ অনেক হয়েছে, সকালও হয়ে গেছে।</p>
-            
+                
             </>
         ),
-    }
+    },
 ]

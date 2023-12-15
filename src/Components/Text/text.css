@@ -1,18 +1,11 @@
-
-
-.back-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    z-index: 999;
-    font-size: 30px;
-    color: wheat;
-    padding: 10px;
+.textcontainer {
+  width: 600px !important;
+  height: 100%;
+}
+@media screen and (min-width: 375px) {
+  .textcontainer {
+    width: 100% !important;
+    height: 100%;
   }
-  
-  .back-to-top-button.visible {
-    opacity: 1;
-  }
+}
   

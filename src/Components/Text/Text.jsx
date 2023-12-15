@@ -1,17 +1,29 @@
 import React, { useState, useEffect } from 'react';
+import "../Text/text.css"
 import { Link, useParams } from 'react-router-dom';
-import { Data } from './CtiTxt';
-import '../Text/text.css'
+import { CtiTxt } from '../Text/CtiTxt';
 
 const Text = () => {
-  const { username } = useParams();
-
+  const { name } = useParams();
   const [showBackToTop, setShowBackToTop] = useState(false);
+
+  const item = CtiTxt.find((item) => item.name === name);
+
+  if (!item) {
+    return <div className="flex items-center justify-center h-screen">
+    <div className="text-center">
+      <h1 className="text-6xl font-bold mb-4 text-red-500">404</h1>
+      <p className="text-xl font-semibold mb-4">Page not found</p>
+      <p className="text-gray-600 mb-8">The page you are looking for might be in another castle.</p>
+      <Link href="/">
+        <a className="text-blue-500 hover:underline">Go back home</a>
+      </Link>
+    </div>
+  </div>;
+  }
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-
-    // Show the back-to-top button when scrolling down and scroll position is over 100vh
     setShowBackToTop(scrollY > window.innerHeight);
   };
 
@@ -28,50 +40,26 @@ const Text = () => {
   };
 
   return (
-    <div>
-      <div className='w-full flex justify-center bg-[#6d6d6d]'>
-        <div className='wrap w-[600px] bg-[#0f172a] p-5'>
-
-          {/* Back to Home Button */}
-          <Link to="/" className="back-to-home-button">
-            Back to Home
-          </Link>
-
-          {/* Your existing content goes here */}
-
-          {
-            Data.map((item) => (
-              <div className='w-full' key={item.id}>
-                <h1 className='text-[30px] font-bold font-noto my-4' style={{ color: item.ncol }}>{item.name}</h1>
-                <p className='text-[12px] text-justify font-noto font-light uppercase text-[blue] py-[10px]'>
-                  {
-                    item.catagory.map((catagory) => (
-                      <span className='mr-3' key={catagory}>
-                        {catagory}
-                      </span>
-                    ))
-                  }
-                </p>
-                <p className='text-[15px] text-justify font-noto font-semibold text-[#6d6d6d] leading-8'>
-                  {item.text}
-                </p>
-                <p><br /><br /><br /><br /><br /><br /><br /></p>
-              </div>
-            ))
-          }
-
-          {/* Back to Top Button */}
-          <button
-            className={`back-to-top-button ${showBackToTop ? 'visible' : ''}`}
-            onClick={scrollToTop}
-          >
-            ▲
-          </button>
-
+    <>
+      <div className=' textcontainer w-[600px] mx-auto bg-gray-500'>
+        <div className='w-full h-[250px] bg-red-400'>
+          <img src={item.cover} alt="" />
+        </div>
+        <div className='p-2'>
+          <h1 className='text-[30px] font-bold my-1 mb-6' style={{ color: item.ncol }}>{item.name}</h1>
+          <div className='font-noto leading-8 w-full'>{item.text}</div>
         </div>
       </div>
-    </div>
+
+      {showBackToTop && (
+        <button className='w-6 h-6 fixed bottom-8 right-8 bg-[#ffffff48] text-black rounded-full'
+                onClick={scrollToTop}>
+          ▲
+        </button>
+      )}
+    </>
   );
 };
 
 export default Text;
+

@@ -7,6 +7,7 @@
     grid-column-gap: 20px;
     grid-gap: 30px;
     overflow: hidden;
+    background-color: gray;
     
   }
   .containerwr .cards {
@@ -27,6 +28,7 @@
     text-align: center;
     background-color: blue;
     padding: 10px;
+    
   }
   .filter button {
     border: none;
@@ -35,6 +37,7 @@
     margin: 0px 5px;
     background-color: hotpink;
     border-radius: 3px;
+
   }
   .pagination button {
     padding: 3px 8px;
