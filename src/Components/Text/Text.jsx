@@ -42,14 +42,14 @@ const Text = () => {
             <h1 className={`text-[30px] font-bold my-1 mb-6 ${isDarkMode ? 'text-white' : 'text-red-500'}`} style={{ color: item.ncol }}>
               {item.name}
             </h1>
-            <div className={`text font-noto leading-8 w-full text-[#353535] ${isDarkMode ? 'bg-gray-800 text-white' : ''}`}>
+            <div className={`text font-noto leading-8 w-full text-[#353535] ${isDarkMode ? 'bg-gray-800 text-white' : 'text-[#00171f]'}`}>
               {item.text}
             </div>
           </div>
         </div>
 
         <button
-          className={`w-6 h-6 fixed bottom-8 right-8 rounded-full ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-[#ffffff48] text-black'}`}
+          className={`w-6 h-6 fixed bottom-8 right-8 rounded-full ${isDarkMode ? 'bg-gray-800 text-white' : ' text-black'}`}
           onClick={scrollToTop}
         >
           ▲
