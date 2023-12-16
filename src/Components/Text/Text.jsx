@@ -48,7 +48,7 @@ const Text = () => {
         </div>
         <div className='w-full bg-red-500'>
           <h1 className='text-[30px] font-bold my-1 mb-6' style={{ color: item.ncol }}>{item.name}</h1>
-          <div className='font-noto leading-8 w-full bg-blue-400'>{item.text}</div>
+          <div className='text font-noto leading-8 w-full bg-blue-400'>{item.text}</div>
         </div>
       </div>
 
