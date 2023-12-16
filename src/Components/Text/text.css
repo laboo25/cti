@@ -16,10 +16,10 @@
     overflow: hidden;
   }
   .text {
-    text-align: center;
+    text-align: justify;
   }
   .text p {
-    text-align: center;
+    text-align: justify;
   }
 }
   
