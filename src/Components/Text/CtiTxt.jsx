@@ -3,7 +3,7 @@ export const CtiTxt = [
     {
         id: uuidv4(),
         name: 'আচোদা টাইট পোঁদ মারা',
-        cover: 'https://cdni.pornpics.com/1280/7/488/97618947/97618947_008_f623.jpg',
+        cover: 'https://cdni.pornpics.com/1280/7/366/16605381/16605381_038_4124.jpg',
         title: 'tight ass',
         catagory: ['anal', 'mini'],
         ncol: 'grey',
