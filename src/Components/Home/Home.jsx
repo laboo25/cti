@@ -78,7 +78,7 @@ const Home = () => {
         {visibleData.map((item) => (
           <div key={item.id} className="cards">
             {/* Your existing code for displaying items */}
-            <div className={`w-full bg-${item.ncol} px-2 py-1`}>
+            <div className={`w-full px-2 py-1`} style={{ backgroundColor: item.ncol }}>
               <Link
                 to={`/${item.title}`}
                 className="text-[22px] font-semibold font-noto"
