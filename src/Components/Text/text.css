@@ -15,5 +15,11 @@
     width: 375px;
     overflow: hidden;
   }
+  .text {
+    text-align: center;
+  }
+  .text p {
+    text-align: center;
+  }
 }
   
