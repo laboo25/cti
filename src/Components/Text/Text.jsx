@@ -34,7 +34,7 @@ const Text = () => {
   return (
     <>
       <div className={`w-full ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-        <div className=' textcontainer bg-gray-500'>
+        <div className=' textcontainer bg-[#f4f3ee]'>
           <div className='coverph w-full h-[250px]'>
             <img src={item.cover} alt="" className='w-full h-full object-contain' />
           </div>
@@ -42,7 +42,7 @@ const Text = () => {
             <h1 className={`text-[30px] font-bold my-1 mb-6 ${isDarkMode ? 'text-white' : 'text-red-500'}`} style={{ color: item.ncol }}>
               {item.name}
             </h1>
-            <div className={`text font-noto leading-8 w-full ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-blue-400'}`}>
+            <div className={`text font-noto leading-8 w-full text-[#353535] ${isDarkMode ? 'bg-gray-800 text-white' : 'bg-blue-400'}`}>
               {item.text}
             </div>
           </div>
