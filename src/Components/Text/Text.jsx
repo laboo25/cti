@@ -46,7 +46,7 @@ const Text = () => {
         <div className='coverph w-full h-[250px]'>
           <img src={item.cover} alt="" className='w-full h-full object-contain' />
         </div>
-        <div className='w-full bg-red-500'>
+        <div className='w-full bg-red-500 p-2'>
           <h1 className='text-[30px] font-bold my-1 mb-6' style={{ color: item.ncol }}>{item.name}</h1>
           <div className='text font-noto leading-8 w-full bg-blue-400'>{item.text}</div>
         </div>
