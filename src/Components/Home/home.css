@@ -41,5 +41,6 @@
   }
   .pagination button {
     padding: 3px 8px;
-    background-color: aqua;
+    background-color: grey;
+    border-radius: 5px;
   }

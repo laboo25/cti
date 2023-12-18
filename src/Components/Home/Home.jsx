@@ -101,7 +101,7 @@ const Home = () => {
       </div>
 
       {/* Pagination */}
-      <div className="pagination mt-4 w-[600px] flex justify-center">
+      <div className="pagination mt-4 flex justify-center">
         {Array.from({ length: totalPages }, (_, index) => index + 1).map(
           (page) => (
             <button
