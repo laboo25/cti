@@ -33,7 +33,7 @@ const Text = () => {
 
   return (
     <>
-      <div className={`w-full ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
+      <div className={`w-full body ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
         <div className=' textcontainer bg-[#f4f3ee]'>
           <div className='coverph w-full h-[250px]'>
             <img src={item.cover} alt="" className='w-full h-full object-contain' />
