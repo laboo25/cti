@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 375px) {
   .body {
-    width: 375px;
+    width: auto;
   }
   .textcontainer {
     width: 100%;
