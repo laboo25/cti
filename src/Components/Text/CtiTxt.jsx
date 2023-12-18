@@ -4,7 +4,7 @@ export const CtiTxt = [
         id: uuidv4(),
         name: 'আমার মায়ের দৈনন্দিন যৌন জীবন',
         title: 'moms daily sex life',
-        cover: 'https://cdni.pornpics.com/460/5/250/48561328/48561328_008_5533.jpg',
+        cover: 'https://cdni.pornpics.com/1280/1/288/71398272/71398272_007_093c.jpg',
         catagory: ['anal', 'mom', 'xtra large'],
         ncol: 'yellow',
         description: (
