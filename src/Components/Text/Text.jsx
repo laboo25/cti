@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "../Text/text.css";
 import { Link, useParams } from 'react-router-dom';
 import { CtiTxt } from '../Text/CtiTxt';
+import "../Text/text.css";
 
 const Text = () => {
   const { title } = useParams();
@@ -31,10 +31,12 @@ const Text = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const sortedItems = CtiTxt.sort((a, b) => a.name.localeCompare(b.name));
+
   return (
     <>
       <div className={`w-full body ${isDarkMode ? 'dark-theme' : 'light-theme'}`}>
-        <div className=' textcontainer bg-[#f4f3ee]'>
+        <div className='textcontainer bg-[#f4f3ee]'>
           <div className='coverph w-full h-[250px]'>
             <img src={item.cover} alt="" className='w-full h-full object-contain' />
           </div>
