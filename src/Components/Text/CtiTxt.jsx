@@ -5,7 +5,7 @@ export const CtiTxt = [
         name: 'কাম কী জিনিস',
         title: 'what is cum',
         cover: 'https://cdni.pornpics.com/1280/7/165/67166751/67166751_068_ce84.jpg',
-        catagory: ['anal', 'msm', 'hot', 'fantasy', 'swap', 'xtra large'],
+        catagory: ['anal', 'msm', 'hot🔥', 'fantasy', 'swap', 'xtra large'],
         ncol: 'red',
         description: (
             <>
