@@ -8,7 +8,7 @@ const Text = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const item = CtiTxt.find((item) => item.title === title);
+  const item = CtiTxt.find((item) => item.title.toLowerCase() === title.toLowerCase());
 
   useEffect(() => {
     const handleScroll = () => {
