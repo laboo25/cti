@@ -89,7 +89,7 @@ const Home = () => {
             <p className="w-full h-[100px] font-noto text-[12px] overflow-hidden">
               {item.description }
             </p>
-            <ul className="list-none p-0 m-0 flex">
+            <ul className="list-none p-0 m-0 flex bg-[#d0d0d0]">
               {item.catagory.map((category, index) => (
                 <li key={index} className="mx-1 text-[13px] text-[blue]">
                   {category}
