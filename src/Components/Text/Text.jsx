@@ -40,11 +40,11 @@ const Text = () => {
           <div className='coverph w-full h-[250px]'>
             <img src={item.cover} alt="" className='w-full h-full object-contain' />
           </div>
-          <div className={`w-full p-2 ${isDarkMode ? 'bg-gray-900' : ''}`}>
+          <div className={`w-full p-2 ${isDarkMode ? '#6A0DAD' : ''}`}>
             <h1 className={`text-[30px] font-bold my-1 mb-6 ${isDarkMode ? 'text-[white]' : 'text-red-500'}`} style={{ color: item.ncol }}>
               {item.name}
             </h1>
-            <div className={`text font-noto leading-8 w-full text-[#353535] ${isDarkMode ? 'bg-gray-800 text-[#b6b6b6]' : 'text-[#00171f]'}`}>
+            <div className={`text font-noto leading-8 w-full text-[#353535] ${isDarkMode ? ' text-[#8B008B]' : 'text-[#00171f]'}`}>
               {item.text}
               <div>
                 <br /><br /><br /><br /><br /><br />
